@@ -1,0 +1,73 @@
+package ECommerceOnlineShopping;
+import java.util.Scanner;
+public class ShoppingCart{
+		
+	private int choice;
+	private int quantity=0;
+	private int total=0;
+	private int price=0;
+	
+	public void MenuList()
+	{
+		Scanner sc =new Scanner(System.in);
+		
+		do
+		{
+			System.out.println("0.Exit 1.Mobile 2.Watch 3.Shirt 4.Jeans 5.Headphone");
+			System.out.print("Enter choise:");
+			choice = sc.nextInt();
+			System.out.println();
+			
+			switch (choice)
+			{
+			case 1:
+				quantity+= 1;
+				price=15000;
+				System.out.println("Price of Mobile = " + price);
+				total += price;										
+				System.out.println();
+				break;
+			
+			case 2:
+				quantity += 1;
+				price = 900;
+				System.out.println("Price of Watch = " + price);
+				total += price;
+				System.out.println();
+				break;
+			
+			case 3:
+				quantity += 1;
+				price = 999;
+				System.out.println("Price of Shirt = " + price);
+				total = total + price;
+				System.out.println();
+				break;
+			
+			case 4:
+				quantity += 1;
+				price = 2000;
+				System.out.println("Price of Jeans = " + price);
+				total += price;
+				System.out.println();
+				break;
+			
+			case 5:
+				quantity += 1;
+				price = 1500;
+				System.out.println("Price of Headphone = " + price);
+				total += price;
+				System.out.println();
+				break;
+			}
+			
+		} 
+		
+			while (choice != 0);
+		
+				System.out.println("Total Quantity = " + quantity + " Total Price = " + total);
+				sc.close();
+			}
+
+		
+	}

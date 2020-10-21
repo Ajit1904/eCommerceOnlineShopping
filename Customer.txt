@@ -1,0 +1,26 @@
+package ECommerceOnlineShopping;
+import java.util.Scanner;
+public class Customer {
+
+	String name;
+	String email;
+	int age;
+	
+	void setData()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Customer Details:");
+		name=sc.next();
+		email=sc.next();
+		age=sc.nextInt();
+		sc.close();
+	}
+	void display()
+	{
+		System.out.println(name+" "+email+" "+age+" ");
+	
+		
+
+	}
+
+}

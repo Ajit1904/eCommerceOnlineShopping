@@ -1,0 +1,33 @@
+package ECommerceOnlineShopping;
+
+public class Product {
+
+		
+		private int ProductId;
+		private String ProductName;
+		private double ProductPrice;
+		
+		public int getproductId()
+		{
+			return ProductId;
+			
+		}
+		public void setProductId(int ProductId) {
+			this.ProductId = ProductId;
+		}
+		public String getProductId() {
+			return ProductName;
+		}
+        public void setProductName(String productName) {
+        	this.ProductName = productName;
+        }
+        public double getProductPrice() {
+        	return ProductPrice;
+        	
+        }
+        public void serPrice(double price) {
+        	this.ProductPrice = price;
+        }
+	}
+
+
